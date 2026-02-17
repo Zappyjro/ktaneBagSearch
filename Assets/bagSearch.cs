@@ -423,6 +423,27 @@ public class bagSearch : MonoBehaviour {
 				}
 			}
 		}
+		if (airlines [0] == "SparkJet Airways") {
+			if (oneDetained) {
+				oneDetained = false;
+				for (int i = 0; i < 6; i++) {
+					int j = i;
+					shouldBeConfiscatedOne [j] = true;
+				}
+			}
+		}
+		if (airlines [0] == "BlastAir" && Info.GetBatteryCount () > 2) {
+			shouldBeConfiscatedOne [5] = true;
+		}
+		if (airlines [0] == "BoomSky Express") {
+			if (weights [0] == 2 || weights [0] == 3 || weights [0] == 5 || weights [0] == 7 || weights [0] == 11 || weights [0] == 13 || weights [0] == 17 || weights [0] == 19 || weights [0] == 23 || weights [0] == 29 || weights [0] == 31 || weights [0] == 37) {
+				for (int i = 0; i < 3; i++) {
+					int j = i;
+					shouldBeConfiscatedOne [j] = true;
+				}
+			}
+		}
+
 		//money
 		for (int i = 0; i < 6; i++) {
 			int j = i;
@@ -438,32 +459,14 @@ public class bagSearch : MonoBehaviour {
 				}
 			}
 		}
-		if (airlines [0] == "SparkJet Airways") {
-			if (oneDetained) {
-				oneDetained = false;
-				for (int i = 0; i < 6; i++) {
-					int j = i;
-					shouldBeConfiscatedOne [j] = true;
-				}
-			}
-		}
-		if (airlines [0] == "BlastAir" && Info.GetBatteryCount () > 2) {
-			shouldBeConfiscatedOne [5] = true;
-		}
+
 		if (airlines [0] == "DynamitePlus Airways") {
 			for (int i = 0; i < 3; i++) {
 				int j = i;
 				shouldBeConfiscatedOne [j] = false;
 			}
 		}
-		if (airlines [0] == "BoomSky Express") {
-			if (weights [0] == 2 || weights [0] == 3 || weights [0] == 5 || weights [0] == 7 || weights [0] == 11 || weights [0] == 13 || weights [0] == 17 || weights [0] == 19 || weights [0] == 23 || weights [0] == 29 || weights [0] == 31 || weights [0] == 37) {
-				for (int i = 0; i < 3; i++) {
-					int j = i;
-					shouldBeConfiscatedOne [j] = true;
-				}
-			}
-		}
+
 		if (starbadge) {
 			if (starPos < 3) {
 				for (int i = 0; i < 3; i++) {
@@ -704,6 +707,27 @@ public class bagSearch : MonoBehaviour {
 			}
 		}
 
+		if (airlines [1] == "SparkJet Airways") {
+			if (twoDetained) {
+				twoDetained = false;
+				for (int i = 0; i < 6; i++) {
+					int j = i;
+					shouldBeConfiscatedTwo [j] = true;
+				}
+			}
+		}
+		if (airlines [1] == "BlastAir" && Info.GetBatteryCount () > 2) {
+			shouldBeConfiscatedTwo [5] = true;
+		}
+		if (airlines [1] == "BoomSky Express") {
+			if (weights [1] == 2 || weights [1] == 3 || weights [1] == 5 || weights [1] == 7 || weights [1] == 11 || weights [1] == 13 || weights [1] == 17 || weights [1] == 19 || weights [1] == 23 || weights [1] == 29 || weights [1] == 31 || weights [1] == 37) {
+				for (int i = 0; i < 3; i++) {
+					int j = i;
+					shouldBeConfiscatedTwo [j] = true;
+				}
+			}
+		}
+
 		//money
 		for (int i = 0; i < 6; i++) {
 			int j = i;
@@ -719,32 +743,14 @@ public class bagSearch : MonoBehaviour {
 				}
 			}
 		}
-		if (airlines [1] == "SparkJet Airways") {
-			if (twoDetained) {
-				twoDetained = false;
-				for (int i = 0; i < 6; i++) {
-					int j = i;
-					shouldBeConfiscatedTwo [j] = true;
-				}
-			}
-		}
-		if (airlines [1] == "BlastAir" && Info.GetBatteryCount () > 2) {
-			shouldBeConfiscatedTwo [5] = true;
-		}
+
 		if (airlines [1] == "DynamitePlus Airways") {
 			for (int i = 0; i < 3; i++) {
 				int j = i;
 				shouldBeConfiscatedTwo [j] = false;
 			}
 		}
-		if (airlines [1] == "BoomSky Express") {
-			if (weights [1] == 2 || weights [1] == 3 || weights [1] == 5 || weights [1] == 7 || weights [1] == 11 || weights [1] == 13 || weights [1] == 17 || weights [1] == 19 || weights [1] == 23 || weights [1] == 29 || weights [1] == 31 || weights [1] == 37) {
-				for (int i = 0; i < 3; i++) {
-					int j = i;
-					shouldBeConfiscatedTwo [j] = true;
-				}
-			}
-		}
+
 		if (starbadge) {
 			if (starPos < 3) {
 				for (int i = 0; i < 3; i++) {
@@ -938,6 +944,27 @@ public class bagSearch : MonoBehaviour {
 			}
 		}
 
+		if (airlines [2] == "SparkJet Airways") {
+			if (threeDetained) {
+				threeDetained = false;
+				for (int i = 0; i < 6; i++) {
+					int j = i;
+					shouldBeConfiscatedThree [j] = true;
+				}
+			}
+		}
+		if (airlines [2] == "BlastAir" && Info.GetBatteryCount () > 2) {
+			shouldBeConfiscatedThree [5] = true;
+		}
+		if (airlines [2] == "BoomSky Express") {
+			if (weights [2] == 2 || weights [2] == 3 || weights [2] == 5 || weights [2] == 7 || weights [2] == 11 || weights [2] == 13 || weights [2] == 17 || weights [2] == 19 || weights [2] == 23 || weights [2] == 29 || weights [2] == 31 || weights [2] == 37) {
+				for (int i = 0; i < 3; i++) {
+					int j = i;
+					shouldBeConfiscatedThree [j] = true;
+				}
+			}
+		}
+
 		//money
 		for (int i = 0; i < 6; i++) {
 			int j = i;
@@ -953,32 +980,14 @@ public class bagSearch : MonoBehaviour {
 				}
 			}
 		}
-		if (airlines [2] == "SparkJet Airways") {
-			if (threeDetained) {
-				threeDetained = false;
-				for (int i = 0; i < 6; i++) {
-					int j = i;
-					shouldBeConfiscatedThree [j] = true;
-				}
-			}
-		}
-		if (airlines [2] == "BlastAir" && Info.GetBatteryCount () > 2) {
-			shouldBeConfiscatedThree [5] = true;
-		}
+
 		if (airlines [2] == "DynamitePlus Airways") {
 			for (int i = 0; i < 3; i++) {
 				int j = i;
 				shouldBeConfiscatedThree [j] = false;
 			}
 		}
-		if (airlines [2] == "BoomSky Express") {
-			if (weights [2] == 2 || weights [2] == 3 || weights [2] == 5 || weights [2] == 7 || weights [2] == 11 || weights [2] == 13 || weights [2] == 17 || weights [2] == 19 || weights [2] == 23 || weights [2] == 29 || weights [2] == 31 || weights [2] == 37) {
-				for (int i = 0; i < 3; i++) {
-					int j = i;
-					shouldBeConfiscatedThree [j] = true;
-				}
-			}
-		}
+
 		if (starbadge) {
 			if (starPos < 3) {
 				for (int i = 0; i < 3; i++) {
